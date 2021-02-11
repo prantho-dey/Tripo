@@ -1,0 +1,282 @@
+.sing-up-area {
+	background-color: #fff;
+	margin: 80px;
+    position: relative;
+
+    .sine-up-wrapper {
+        h1 {
+            font-weight: bold;
+            font-size: 54px;
+            line-height: 110.7%;
+            margin-bottom: 50px;
+        }
+        #email-input {
+            position: relative;
+
+            input {
+                width: 100%;
+                padding-top: 40px;
+                padding-bottom: 40px;
+                padding-left: 80px;
+                padding-right: 240px;
+                background: #FFFFFF;
+                box-shadow: 0px 92px 132px rgba(207, 216, 228, 0.42);
+                border: 2px solid #f9f9f9;
+                font-size: 20;
+                color: $pragraph-color;
+            }
+            i {
+                position: absolute;
+                content: "";
+                top: 50%;
+                transform: translateY(-50%);
+                left: 40px;
+                width: 20px;
+                height: 20px;
+                text-align: center;
+                line-height: 16px;
+                border: 2px solid $theme-color;
+                color: red;
+                border-radius: 5px;
+                font-weight: 300;
+            }
+            button {
+                position: absolute;
+                content: "";
+                top: 50%;
+                transform: translateY(-50%);
+                width: 216px;
+                height: 74px;
+                right: 15px;
+                border-width: 0;
+                background-color: $theme-color;
+                color: #fff;
+                font-size: 20px;
+                text-transform: capitalize;
+                @include transition(0.3s);
+
+                &:hover {
+                    background-color: #1F51B2;
+                }
+            }
+        }
+    }
+    .facebook {
+        position: absolute;
+        left: 190px;
+        top: 160px;
+        animation: facebook 5s linear infinite;
+
+        @keyframes facebook {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1) rotate(10deg);
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 0;
+                transform: scale(1.2) rotate(20deg);
+            }
+        }
+
+    }
+    .heart {
+        position: absolute;
+        left: 0;
+        top: 30px;
+        animation: heart 6s linear infinite;
+
+        @keyframes heart {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 0;
+                transform: scale(1.4);
+            }
+        }
+    }
+    .like {
+        position: absolute;
+        left: 30px;
+        bottom: 100px;
+        animation: like 3s linear infinite;
+
+        @keyframes like {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 0;
+                transform: scale(1.4);
+            }
+        }
+    }
+    .twtore {
+        position: absolute;
+        right: 220px;
+        bottom: 225px;
+        animation: twtore 3s linear infinite;
+
+        @keyframes twtore {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 0;
+                transform: scale(1.4);
+            }
+        }
+    }
+    .share {
+        position: absolute;
+        right: 30px;
+        bottom: 100px;
+        animation: share 4s linear infinite;
+
+        @keyframes share {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 0;
+                transform: scale(1.4);
+            }
+        }
+    }
+    .people {
+        position: absolute;
+        right: 100px;
+        top: 40px;
+        animation: people 3s linear infinite;
+
+        @keyframes people {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+                opacity: 0.6;
+            }
+            100% {
+                opacity: 0;
+                transform: scale(1.4);
+            }
+        }
+    }
+}
+
+// Responsive 
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+    
+    
+    .sing-up-area {
+        .twtore {
+            right: 175px;
+        }
+    }
+  }
+ 
+ // Large devices (desktops, 992px and up)
+ @media (min-width: 992px) and (max-width: 1199.98px) { 
+   
+    .sing-up-area {
+        .twtore {
+            right: 0px;
+        }
+        .facebook {
+            left: 0px;
+        }
+    }
+    
+ }
+ 
+ // Medium devices (tablets, 768px and up)
+ @media (min-width: 768px) and (max-width: 991.98px) { 
+    
+ }
+ 
+ // Extra small devices (portrait phones, less than 576px)
+ @media (max-width: 575.98px) { 
+    .sing-up-area {
+        padding: 70px 0;
+        margin: 30px;
+        .sine-up-wrapper {
+            h1 {
+                font-size: 40px;
+                margin-bottom: 25px;
+            }
+        }
+        .sine-up-wrapper {
+            #email-input {
+                button {
+                    position: inherit;
+                    top: 30px;
+                    transform: translate(0);
+                    width: 200px;
+                    height: 60px;
+                    right: 0;
+                }
+                input {
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                    padding-right: 20px;
+                }
+                i {
+                    top: 26%;
+                }
+            }
+        }
+    }
+ }
+ 
+ // Small devices (landscape phones, 576px and up)
+ @media (min-width: 576px) and (max-width: 767.98px) {
+    
+    .sing-up-area {
+        padding: 70px 0;
+        .sine-up-wrapper {
+            h1 {
+                font-size: 50px;
+            }
+        }
+        .sine-up-wrapper {
+            #email-input {
+                button {
+                    position: inherit;
+                    top: 30px;
+                    transform: translate(0);
+                }
+                input {
+                    padding-top: 30px;
+                    padding-bottom: 30px;
+                    padding-right: 20px;
+                }
+                i {
+                    top: 26%;
+                }
+            }
+        }
+    }
+    
+ }

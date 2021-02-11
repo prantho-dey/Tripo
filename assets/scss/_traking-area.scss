@@ -1,0 +1,161 @@
+.traking-area {
+    padding-top: 295px;
+    background-color: #F9F9F9;
+    z-index: -9;
+
+    .single-traking {
+        position: relative;
+        .traking-image {
+            position: relative;
+            margin-bottom: 50px;
+
+            img {
+                position: relative;
+                z-index: 2;
+                max-width: 60px;
+                height: 60px;
+            }
+
+            .traking-frame {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                z-index: 1;
+
+                img {
+                    max-width: 110px;
+                    height: 110px;
+                }
+            }
+        }
+        .traking-vactor-1 {
+            position: absolute;
+            right: -189px;
+            width: 350px;
+            height: 47px;
+            top: 30px;
+        }
+        .traking-vactor-2 {
+            position: absolute;
+            right: -189px;
+            width: 350px;
+            height: 47px;
+            top: -15px;
+        }
+        .traking-content {
+            h4 {
+                font-weight: bold;
+                font-size: 30px;
+                line-height: 115%;
+                margin: 0;
+            }
+            p {
+                font-size: 22px;
+                line-height: 35px;
+                margin: 0;
+                padding-top: 25px;
+            }
+        }
+    }
+}
+
+// Responsive 
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) and (max-width: 1399.98px) { 
+    
+     
+  }
+ 
+ // Large devices (desktops, 992px and up)
+ @media (min-width: 992px) and (max-width: 1199.98px) { 
+    .traking-area {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        .single-traking {
+            .traking-vactor-1 {
+                right: -128px;
+                width: 232px;
+                height: 47px;
+                top: 30px;
+            }
+            .traking-vactor-2 {
+                right: -128px;
+                width: 232px;
+                height: 47px;
+                top: 6px;
+            }
+        }
+    }
+ }
+ 
+ // Medium devices (tablets, 768px and up)
+ @media (min-width: 768px) and (max-width: 991.98px) { 
+    
+    .traking-area {
+        padding-top: 50px;
+        padding-bottom: 0px;
+        
+        .single-traking {
+            margin-bottom: 70px;
+
+            .traking-image {
+                margin-bottom: 40px;
+            }
+            .traking-content {
+                p {
+                    padding-top: 15px;
+                }
+            }
+        }
+    }
+    
+ }
+ 
+ // Extra small devices (portrait phones, less than 576px)
+ @media (max-width: 575.98px) { 
+    .traking-area {
+        padding-top: 50px;
+        padding-bottom: 0px;
+        
+        .single-traking {
+            margin-bottom: 70px;
+
+            .traking-image {
+                margin-bottom: 40px;
+            }
+            .traking-content {
+                h4 {
+                    font-size: 25px;
+                }
+                p {
+                    padding-top: 15px;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+ }
+ 
+ // Small devices (landscape phones, 576px and up)
+ @media (min-width: 576px) and (max-width: 767.98px) {
+    .traking-area {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        
+        .single-traking {
+            margin-bottom: 70px;
+
+            .traking-image {
+                margin-bottom: 40px;
+            }
+            .traking-content {
+                p {
+                    padding-top: 15px;
+                }
+            }
+        }
+    }
+    
+ }
